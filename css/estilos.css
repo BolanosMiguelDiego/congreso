@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+header {
+	width: 100%;
+	background: #F6F6F6;
+}
+
+h1{
+    color: #008B8B;
+    font-family:'Josefin Sans', sans-serif;
+    
+}
+footer{
+/*background: #004a8e;*/
+background: #ffffff;
+background-image:url(https://www.cierqueretaro.org.mx/images/Lineas_Poligonales_CIERMMI2019_v2.png);
+}
+header{
+background: #ffffff;
+background-image: url(https://www.cierqueretaro.org.mx/images/Lineas_Poligonales_CIERMMI2019_v4.png);
+width: auto;
+}
+
+#btn-menu {
+	display: none;
+	padding: 10px;
+	float: right;
+}
+
+header label {
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+
+header label:hover {
+	cursor: pointer;/*
+	background: #9C9C9C;*/
+}
+
+.menu ul {
+	margin: 2px;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	
+}
+
+.menu li {
+	text-align: center;
+	/*flex-grow: 1;*/
+}
+
+.menu li:hover {
+	background: #F4F4F4;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px;
+	color: green;
+	text-decoration: none;
+	width: 80px;
+}
+
+.menu-horizontal {
+	margin: 0px;
+	background: #FaFbFd;
+	text-align: center;
+	border: 1px solid #f0f0f0;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	padding: 2px;
+
+}
+
+main{
+	padding: 50px;
+}
+
+@media (max-width: 768px){
+	header label{
+		display: block;
+	}
+	.menu {
+		position: absolute;
+		background: #FaFbFd;
+		width: 30%;
+		margin-left: -30%;
+		transition: all 0.5s;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #fff;
+		float: left;
+	}
+
+
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+
+	}
+
+}
+
